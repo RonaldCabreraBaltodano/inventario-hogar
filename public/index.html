@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventario Hogar</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Inventario Hogar</h1>
+    <p class="sub">Camas, muebles y artículos para el hogar · datos ficticios · montos en colones (CRC)</p>
+  </header>
+
+  <main>
+    <section class="totales" aria-label="Totales del inventario">
+      <div class="tarjeta"><span class="etiqueta">Productos</span><strong id="total-productos">—</strong></div>
+      <div class="tarjeta"><span class="etiqueta">Unidades en bodega</span><strong id="total-unidades">—</strong></div>
+      <div class="tarjeta"><span class="etiqueta">Valor del inventario</span><strong id="total-valor">—</strong></div>
+    </section>
+
+    <div class="formularios">
+      <section class="panel">
+        <h2>1. Registrar producto</h2>
+        <form id="form-producto" novalidate>
+          <label>Código <input name="codigo" placeholder="CAM-004" autocomplete="off"></label>
+          <label>Nombre <input name="nombre" placeholder="Cama queen con gavetas" autocomplete="off"></label>
+          <label>Categoría <input name="categoria" list="lista-categorias" placeholder="Camas" autocomplete="off"></label>
+          <datalist id="lista-categorias"></datalist>
+          <label>Costo unitario (₡) <input name="costoUnitario" inputmode="numeric" placeholder="150000" autocomplete="off"></label>
+          <button type="submit">Guardar producto</button>
+          <p class="mensaje" id="msg-producto" role="status"></p>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>2. Registrar entrada o salida</h2>
+        <form id="form-movimiento" novalidate>
+          <label>Producto <select name="codigoProducto" id="select-producto"></select></label>
+          <fieldset class="tipo">
+            <legend>Tipo</legend>
+            <label class="opcion"><input type="radio" name="tipo" value="entrada" checked> Entrada (compra)</label>
+            <label class="opcion"><input type="radio" name="tipo" value="salida"> Salida (venta o despacho)</label>
+          </fieldset>
+          <label>Cantidad <input name="cantidad" inputmode="numeric" placeholder="1" autocomplete="off"></label>
+          <label>Fecha <input name="fecha" type="date"></label>
+          <button type="submit">Registrar movimiento</button>
+          <p class="mensaje" id="msg-movimiento" role="status"></p>
+        </form>
+      </section>
+    </div>
+
+    <section class="panel">
+      <h2>3. Existencias</h2>
+      <div class="tabla-scroll">
+        <table>
+          <thead>
+            <tr><th>Código</th><th>Producto</th><th>Categoría</th><th class="num">Costo unitario</th><th class="num">Existencia</th><th class="num">Valor</th></tr>
+          </thead>
+          <tbody id="tabla-existencias"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="formularios">
+      <section class="panel">
+        <h2>Resumen por categoría</h2>
+        <div class="tabla-scroll">
+          <table>
+            <thead><tr><th>Categoría</th><th class="num">Productos</th><th class="num">Unidades</th><th class="num">Valor</th></tr></thead>
+            <tbody id="tabla-categorias"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Últimos movimientos</h2>
+        <div class="tabla-scroll">
+          <table>
+            <thead><tr><th>#</th><th>Fecha</th><th>Producto</th><th>Tipo</th><th class="num">Cantidad</th></tr></thead>
+            <tbody id="tabla-movimientos"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>

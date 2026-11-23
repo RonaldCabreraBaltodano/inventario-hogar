@@ -1,0 +1,36 @@
+{
+  "productos": [
+    { "codigo": "CAM-001", "nombre": "Cama matrimonial con respaldar", "categoria": "Camas", "costoUnitario": 185000 },
+    { "codigo": "CAM-002", "nombre": "Colchón individual ortopédico", "categoria": "Camas", "costoUnitario": 120000 },
+    { "codigo": "CAM-003", "nombre": "Camarote de madera", "categoria": "Camas", "costoUnitario": 240000 },
+    { "codigo": "MUE-001", "nombre": "Sofá de tres plazas", "categoria": "Muebles", "costoUnitario": 295000 },
+    { "codigo": "MUE-002", "nombre": "Mesa de comedor para 6", "categoria": "Muebles", "costoUnitario": 210000 },
+    { "codigo": "MUE-003", "nombre": "Silla de comedor tapizada", "categoria": "Muebles", "costoUnitario": 32000 },
+    { "codigo": "COC-001", "nombre": "Juego de ollas de 7 piezas", "categoria": "Cocina", "costoUnitario": 45000 },
+    { "codigo": "COC-002", "nombre": "Vajilla de 16 piezas", "categoria": "Cocina", "costoUnitario": 28500 },
+    { "codigo": "BAN-001", "nombre": "Juego de toallas de 3 piezas", "categoria": "Baño", "costoUnitario": 12500 },
+    { "codigo": "DEC-001", "nombre": "Lámpara de mesa", "categoria": "Decoración", "costoUnitario": 18900 }
+  ],
+  "movimientos": [
+    { "id": 1, "codigoProducto": "CAM-001", "tipo": "entrada", "cantidad": 8, "fecha": "2026-11-02" },
+    { "id": 2, "codigoProducto": "CAM-002", "tipo": "entrada", "cantidad": 12, "fecha": "2026-11-02" },
+    { "id": 3, "codigoProducto": "CAM-003", "tipo": "entrada", "cantidad": 4, "fecha": "2026-11-03" },
+    { "id": 4, "codigoProducto": "MUE-001", "tipo": "entrada", "cantidad": 5, "fecha": "2026-11-03" },
+    { "id": 5, "codigoProducto": "MUE-002", "tipo": "entrada", "cantidad": 3, "fecha": "2026-11-04" },
+    { "id": 6, "codigoProducto": "MUE-003", "tipo": "entrada", "cantidad": 24, "fecha": "2026-11-04" },
+    { "id": 7, "codigoProducto": "COC-001", "tipo": "entrada", "cantidad": 15, "fecha": "2026-11-05" },
+    { "id": 8, "codigoProducto": "COC-002", "tipo": "entrada", "cantidad": 20, "fecha": "2026-11-05" },
+    { "id": 9, "codigoProducto": "BAN-001", "tipo": "entrada", "cantidad": 30, "fecha": "2026-11-06" },
+    { "id": 10, "codigoProducto": "DEC-001", "tipo": "entrada", "cantidad": 10, "fecha": "2026-11-06" },
+    { "id": 11, "codigoProducto": "CAM-001", "tipo": "salida", "cantidad": 3, "fecha": "2026-11-09" },
+    { "id": 12, "codigoProducto": "CAM-002", "tipo": "salida", "cantidad": 5, "fecha": "2026-11-10" },
+    { "id": 13, "codigoProducto": "MUE-001", "tipo": "salida", "cantidad": 2, "fecha": "2026-11-11" },
+    { "id": 14, "codigoProducto": "MUE-003", "tipo": "salida", "cantidad": 12, "fecha": "2026-11-12" },
+    { "id": 15, "codigoProducto": "COC-001", "tipo": "salida", "cantidad": 6, "fecha": "2026-11-13" },
+    { "id": 16, "codigoProducto": "COC-002", "tipo": "salida", "cantidad": 9, "fecha": "2026-11-16" },
+    { "id": 17, "codigoProducto": "BAN-001", "tipo": "salida", "cantidad": 14, "fecha": "2026-11-17" },
+    { "id": 18, "codigoProducto": "DEC-001", "tipo": "salida", "cantidad": 4, "fecha": "2026-11-18" },
+    { "id": 19, "codigoProducto": "CAM-001", "tipo": "entrada", "cantidad": 2, "fecha": "2026-11-19" },
+    { "id": 20, "codigoProducto": "MUE-002", "tipo": "salida", "cantidad": 1, "fecha": "2026-11-20" }
+  ]
+}
