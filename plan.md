@@ -8,7 +8,7 @@ Entrega: 24 de noviembre de 2026. Ruta crítica: T-01 → T-03 → T-04 → T-05
 | --- | --- | --- | --- | --- | --- |
 | T-01 | Decidir tecnología, persistencia e interfaz (Node.js, JSON, web) | — | — | — | Hecho |
 | T-02 | Redactar intent.md, spec.md y plan.md | T-01 | Todos | — | Hecho |
-| T-03 | Crear repositorio con README y estructura de carpetas | T-01 | — | — | Hecho (falta subir a GitHub) |
+| T-03 | Crear repositorio con README y estructura de carpetas | T-01 | — | — | Hecho |
 | T-04 | Modelo de datos y repositorio JSON | T-03 | RF-03 | P-06, P-06b | Hecho |
 | T-05 | Servicio: registrar producto con validaciones | T-04 | RF-01, RN-03, RN-04 | P-01, P-02 | Hecho |
 | T-06 | Servicio: registrar movimiento aplicando RN-01 y RN-02 | T-05 | RF-02 | P-03, P-04, P-04b | Hecho |
@@ -21,7 +21,7 @@ Entrega: 24 de noviembre de 2026. Ruta crítica: T-01 → T-03 → T-04 → T-05
 | T-13 | docs/demo.md: guion de 12 minutos con caso de error, y ensayo cronometrado | T-08, T-09 | Todos | P-07 | Guion hecho; ensayo pendiente |
 | T-14 | Medir el tiempo restante y decidir si se construye RF-04 | T-08, T-10 | RF-04 | — | Pendiente |
 | T-15 | Generar el QR de cada producto y la ficha que abre al leerlo | T-14 (si se aprueba) | RF-04 | P-08, P-09 | Pendiente |
-| T-16 | Subir el repositorio a GitHub | T-03 | — | — | Pendiente (Ronny crea el repositorio vacío) |
+| T-16 | Subir el repositorio a GitHub | T-03 | — | — | Hecho |
 
 ## Trazabilidad requisito → tarea → prueba
 
